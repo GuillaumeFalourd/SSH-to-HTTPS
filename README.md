@@ -6,8 +6,6 @@ Github Action to configure git to use HTTPS authentication instead of SSH
 
 ## 📚 Usage
 
-[![Public workflows that use this action.](https://img.shields.io/endpoint?url=https%3A%2F%2Fapi-endbug.vercel.app%2Fapi%2Fgithub-actions%2Fused-by%3Faction%3DGuillaumeFalourd%SSH-to-HTTPS%26badge%3Dtrue)](https://github.com/search?o=desc&q=GuillaumeFalourd+SSH-to-HTTPS+path%3A.github%2Fworkflows+language%3AYAML&s=&type=Code) ☞ [Who is using this action? 🧑‍💻](https://github.com/search?q=GuillaumeFalourd+SSH-to-HTTPS+path%3A.github%2Fworkflows+language%3AYAML&type=code)
-
 ### Requirements
 
 ⚠️    The [`actions/checkout`](https://github.com/marketplace/actions/checkout) is mandatory to use this action, with `persist-credentials: false`.
