@@ -58,4 +58,4 @@ _If you don't want the PAT hanging around, run some form of [post-job cleanup](h
 
 ## 🏅 Licensed
 
-☞ This repository uses the [Apache License 2.0](https://github.com/SSH-to-HTTPS/blob/main/LICENSE)
+☞ This repository uses the [Apache License 2.0](https://github.com/GuillaumeFalourd/SSH-to-HTTPS/blob/main/LICENSE)
