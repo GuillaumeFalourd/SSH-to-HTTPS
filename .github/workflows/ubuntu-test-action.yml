@@ -31,7 +31,7 @@ jobs:
         with:
           persist-credentials: false
       - name: Check git config
-      - run: git config --list
+        run: git config --list
       - name: Reconfigure git to use HTTP authentication
         uses: GuillaumeFalourd/SSH-to-HTTP@main
         with:
