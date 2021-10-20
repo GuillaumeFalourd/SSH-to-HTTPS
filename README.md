@@ -2,7 +2,7 @@
 
 [![Action test on Ubuntu](https://github.com/GuillaumeFalourd/SSH-to-HTTPS/actions/workflows/ubuntu-test-action.yml/badge.svg)](https://github.com/GuillaumeFalourd/SSH-to-HTTPS/actions/workflows/ubuntu-test-action.yml) [![Action test on MacOS](https://github.com/GuillaumeFalourd/SSH-to-HTTPS/actions/workflows/macos-test-action.yml/badge.svg)](https://github.com/GuillaumeFalourd/SSH-to-HTTPS/actions/workflows/macos-test-action.yml) [![Action test on Windows](https://github.com/GuillaumeFalourd/SSH-to-HTTPS/actions/workflows/windows-test-action.yml/badge.svg)](https://github.com/GuillaumeFalourd/SSH-to-HTTPS/actions/workflows/windows-test-action.yml)
 
-Github Action to configure git to use HTTPS authentication instead of SSH
+Github Action to reconfigure git to use HTTPS authentication instead of SSH
 
 ## 📚 Usage
 
