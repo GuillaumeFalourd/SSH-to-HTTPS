@@ -2,7 +2,7 @@
 
 [![Action test on Ubuntu](https://github.com/GuillaumeFalourd/SSH-to-HTTPS/actions/workflows/ubuntu-test-action.yml/badge.svg)](https://github.com/GuillaumeFalourd/SSH-to-HTTPS/actions/workflows/ubuntu-test-action.yml) [![Action test on MacOS](https://github.com/GuillaumeFalourd/SSH-to-HTTPS/actions/workflows/macos-test-action.yml/badge.svg)](https://github.com/GuillaumeFalourd/SSH-to-HTTPS/actions/workflows/macos-test-action.yml) [![Action test on Windows](https://github.com/GuillaumeFalourd/SSH-to-HTTPS/actions/workflows/windows-test-action.yml/badge.svg)](https://github.com/GuillaumeFalourd/SSH-to-HTTPS/actions/workflows/windows-test-action.yml)
 
-Github Action to reconfigure git to use HTTPS authentication instead of SSH (which is _default_ in the runner configuration).
+Github Action to reconfigure git to use HTTPS authentication instead of SSH (which is used by _default_ in the runner configuration).
 
 _Kudos: This action implementation is based [on this comment](https://github.com/actions/setup-node/issues/214#issuecomment-810829250) on the [actions/setup-node](https://github.com/actions/setup-node)._
 
