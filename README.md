@@ -20,7 +20,7 @@ Field | Mandatory | Observation
 
 ```yaml
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
         with:
           persist-credentials: false
 
