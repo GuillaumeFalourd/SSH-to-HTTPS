@@ -1,0 +1,44 @@
+name: Action test on Windows
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  test-without-credential:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.4
+        with:
+          persist-credentials: false
+      - name: Check git config
+        run: git config --list
+      - name: Reconfigure git to use HTTP authentication
+        uses: GuillaumeFalourd/SSH-to-HTTP@main
+      - name: Check if git config has been updated
+        uses: GuillaumeFalourd/test-cli-commands-action@v1
+        with:
+          command_line: git config --list
+          contains: url.https://github.com/.insteadof=ssh://git@github.com/
+          expected_result: PASSED
+
+  test-with-credential:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.4
+        with:
+          persist-credentials: false
+      - name: Check git config
+        run: git config --list
+      - name: Reconfigure git to use HTTP authentication
+        uses: GuillaumeFalourd/SSH-to-HTTP@main
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Check if git config has been updated
+        uses: GuillaumeFalourd/test-cli-commands-action@v1
+        with:
+          command_line: git config --list
+          contains: url.https://
+          expected_result: PASSED

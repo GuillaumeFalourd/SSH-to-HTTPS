@@ -1,10 +1,12 @@
 # SSH-to-HTTPS
 
+[![Action test on Ubuntu](https://github.com/GuillaumeFalourd/SSH-to-HTTPS/actions/workflows/ubuntu-test-action.yml/badge.svg)](https://github.com/GuillaumeFalourd/SSH-to-HTTPS/actions/workflows/ubuntu-test-action.yml)
+
 Github Action to reconfigure git to use HTTP authentication instead of SSH
 
 ## Security concerns
 
-There is no difference in terms of transport security, HTTPS and SSH rely on similar underlying crypto. 
+There is no difference in terms of transport security, HTTPS and SSH rely on similar underlying crypto.
 
 Persisting your credentials by adding your [secret Personal Access Token (PAT)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) to the global git config does have security implications, but it's the default behavior of the [checkout action](https://github.com/actions/checkout) already (using `persist-credentials: true`) so no security is _"lost"_.
 
