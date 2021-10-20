@@ -1,10 +1,10 @@
-name: 'SSH to HTTP action'
+name: 'SSH to HTTPS action'
 
-description: 'Github Action to reconfigure git to use HTTP authentication instead of SSH'
+description: 'Github Action to reconfigure git to use HTTPS authentication instead of SSH'
 
 inputs:
     github_token:
-        description: 'Github Personal Access TOken'
+        description: 'Github Personal Access Token'
         required: false
 
 runs:

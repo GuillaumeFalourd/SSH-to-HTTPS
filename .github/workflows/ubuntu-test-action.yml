@@ -18,7 +18,7 @@ jobs:
       - uses: GuillaumeFalourd/test-cli-commands-action@v1
         with:
           command_line: git config --list
-          contains: url.https://@github.com/.insteadof=ssh://git@github.com/
+          contains: url.https://github.com/.insteadof=ssh://git@github.com/
           expected_result: PASSED
 
   test-with-credential:
@@ -36,5 +36,5 @@ jobs:
       - uses: GuillaumeFalourd/test-cli-commands-action@v1
         with:
           command_line: git config --list
-          contains: url.https://***@github.com/.insteadof=ssh://git@github.com/
+          contains:  url.https://***@github.com/.insteadof=ssh://git@github.com/
           expected_result: PASSED
