@@ -10,7 +10,13 @@ Github Action to reconfigure git to use HTTPS authentication instead of SSH
 
 ⚠️    The [`actions/checkout`](https://github.com/marketplace/actions/checkout) is mandatory to use this action, with `persist-credentials: false`.
 
-### Without PAT
+### Action inputs
+
+Field | Mandatory | Observation
+------------ | ------------  | -------------
+**github_token** | NO | [How to create a PAT](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token)
+
+### Without Github PAT
 
 ```yaml
       - name: Checkout
@@ -22,7 +28,7 @@ Github Action to reconfigure git to use HTTPS authentication instead of SSH
         uses: GuillaumeFalourd/SSH-to-HTTPS@v1
 ```
 
-### With PAT
+### With Github PAT
 
 ```yaml
       - name: Checkout
@@ -33,8 +39,10 @@ Github Action to reconfigure git to use HTTPS authentication instead of SSH
       - name: Reconfigure git to use HTTPS authentication
         uses: GuillaumeFalourd/SSH-to-HTTPS@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.ACCESS_TOKEN }}
 ```
+
+_Note: You can use the default `${{ secrets.GITHUB_TOKEN }}` or your PAT with ${{ secrets.ACCESS_TOKEN }}._
 
 ## Eventual security concerns
 
