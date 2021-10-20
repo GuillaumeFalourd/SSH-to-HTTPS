@@ -54,8 +54,8 @@ _If you don't want the PAT hanging around, run some form of [post-job cleanup](h
 
 ## 🤝 Contributing
 
-☞ [Guidelines](https://github.com/GuillaumeFalourd/test-cli-commands-action/blob/main/CONTRIBUTING.md)
+☞ [Guidelines](https://github.com/GuillaumeFalourd/SSH-to-HTTPS/blob/main/CONTRIBUTING.md)
 
 ## 🏅 Licensed
 
-☞ This repository uses the [Apache License 2.0](https://github.com/GuillaumeFalourd/test-cli-command-action/blob/main/LICENSE)
+☞ This repository uses the [Apache License 2.0](https://github.com/SSH-to-HTTPS/blob/main/LICENSE)
