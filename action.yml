@@ -19,3 +19,7 @@ runs:
           git config --global url."https://${{ inputs.github_token }}@github.com/".insteadOf ssh://git@github.com/
         fi
       shell: bash
+
+branding:
+    icon: 'terminal'
+    color: 'black'
