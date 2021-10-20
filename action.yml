@@ -1,0 +1,21 @@
+name: 'SSH to HTTP action'
+
+description: 'Github Action to reconfigure git to use HTTP authentication instead of SSH'
+
+inputs:
+    github_token:
+        description: 'Github Personal Access TOken'
+        required: false
+
+runs:
+  using: "composite"
+  steps:
+
+    - name: Reconfigure git to use HTTP authentication
+      run: |
+        if [ -z "${{ inputs.github_token }}" ]; then
+          git config --global url."https://github.com/".insteadOf ssh://git@github.com/
+        else
+          git config --global url."https://${{ inputs.github_token }}@github.com/".insteadOf ssh://git@github.com/
+        fi
+      shell: bash
