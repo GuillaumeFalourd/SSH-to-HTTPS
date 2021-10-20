@@ -4,7 +4,7 @@
 
 Github Action to reconfigure git to use HTTPS authentication instead of SSH
 
-_Reference: This action implementation is based [on this comment](https://github.com/actions/setup-node/issues/214#issuecomment-810829250) on the [actions/setup-node](https://github.com/actions/setup-node)._
+_Kudos: This action implementation is based [on this comment](https://github.com/actions/setup-node/issues/214#issuecomment-810829250) on the [actions/setup-node](https://github.com/actions/setup-node)._
 
 ## 📚 Usage
 
