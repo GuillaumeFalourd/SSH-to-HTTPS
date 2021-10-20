@@ -44,7 +44,7 @@ Field | Mandatory | Observation
           github_token: ${{ secrets.ACCESS_TOKEN }}
 ```
 
-_Note: You can use the default `${{ secrets.GITHUB_TOKEN }}` or your PAT with ${{ secrets.ACCESS_TOKEN }}._
+_Note: You can use the default `${{ secrets.GITHUB_TOKEN }}` or your PAT with `${{ secrets.ACCESS_TOKEN }}`._
 
 ## Eventual security concerns
 
